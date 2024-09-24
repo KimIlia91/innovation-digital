@@ -51,13 +51,13 @@
 		<h2 class="text-[55px] font-medium text-white">Hello</h2>
 		<Form onSubmit={handleSubmit}>
 			
-			<TextInput id="name" label="Name" bind:value={name} error={errors.name} required={false} />
-			<TextInput id="company" label="Company" bind:value={company} error={errors.company} required={false} />
-			<EmailInput label="Email" bind:value={email} error={errors.email} required={false} />
-			<PhoneInput label="Phone" bind:value={phone} error={errors.phone} required={false} />
-			<TextInput id="subject" label="Subject" bind:value={subject} error={errors.subject} required={false} />
-			<TextInput id="message" label="Message" bind:value={message} error={errors.message} required={false} />
-			<FormCheckbox bind:checked={agreement} error={errors.agreement} />
+			<TextInput id="name" label="Name" bind:value={name} error={errors.name} required={true} />
+			<TextInput id="company" label="Company" bind:value={company} error={errors.company} required={true} />
+			<EmailInput label="Email" bind:value={email} error={errors.email} required={true} />
+			<PhoneInput label="Phone" bind:value={phone} error={errors.phone} required={true} />
+			<TextInput id="subject" label="Subject" bind:value={subject} error={errors.subject} required={true} />
+			<TextInput id="message" label="Message" bind:value={message} error={errors.message} required={true} />
+			<FormCheckbox bind:checked={agreement} error={errors.agreement} required={true} />
 
             <SubmitButton type="submit" />
 		</Form>
