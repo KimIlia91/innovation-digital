@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-svg-main {
+    background-image: url('/src/lib/images/bg-main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative; 
+}
+
+input:-webkit-autofill{
+    -webkit-text-fill-color: white !important;
+    -webkit-box-shadow: 0 0 0 30px #171929 inset !important;
+}
