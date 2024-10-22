@@ -6,10 +6,10 @@
 
 <script lang="ts">
 	import Form from '../components/Form.svelte'
-    import SubmitButton from '../components/SubmitButton.svelte'
+    import Button from '../components/Button.svelte'
 	import Input from '../components/Input.svelte'
 	import PhoneInput from '../components/PhoneInput.svelte'
-	import FormCheckbox from '../components/FormCheckbox.svelte'
+	import CheckboxInput from '../components/CheckboxInput.svelte'
 	import { formSchema } from '../lib/validation-schemas/form-schema'
 
 	let name: string = ''
@@ -56,9 +56,9 @@
 			<PhoneInput label="Phone" bind:value={phone} error={errors.phone} required={true} />
 			<Input id="subject" type='text' label="Subject" bind:value={subject} error={errors.subject} required={true} />
 			<Input id="message" type='text' label="Message" bind:value={message} error={errors.message} required={true} />
-			<FormCheckbox bind:checked={agreement} error={errors.agreement} required={true} />
+			<CheckboxInput bind:checked={agreement} error={errors.agreement} required={true} />
 
-            <SubmitButton type="submit" />
+            <Button type="submit" />
 		</Form>
 	</div>
 </section>
