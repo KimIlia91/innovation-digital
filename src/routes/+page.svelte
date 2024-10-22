@@ -1,15 +1,14 @@
 
 <svelte:head>
-	<title>Дом</title>
+	<title>Innovation digital</title>
 	<meta name="Innovation digital" content="Innovation digital test project. My first svelte app" />
 </svelte:head>
 
 <script lang="ts">
 	import Form from '../components/Form.svelte'
     import SubmitButton from '../components/SubmitButton.svelte'
-	import TextInput from '../components/TextInput.svelte'
+	import Input from '../components/Input.svelte'
 	import PhoneInput from '../components/PhoneInput.svelte'
-	import EmailInput from '../components/EmailInput.svelte'
 	import FormCheckbox from '../components/FormCheckbox.svelte'
 	import { formSchema } from '../lib/validation-schemas/form-schema'
 
@@ -51,12 +50,12 @@
 		<h2 class="text-[55px] font-medium text-white">Hello</h2>
 		<Form onSubmit={handleSubmit}>
 			
-			<TextInput id="name" label="Name" bind:value={name} error={errors.name} required={true} />
-			<TextInput id="company" label="Company" bind:value={company} error={errors.company} required={true} />
-			<EmailInput label="Email" bind:value={email} error={errors.email} required={true} />
+			<Input id="name" type='text' label="Name" bind:value={name} error={errors.name} required={true} />
+			<Input id="company" type='text' label="Company" bind:value={company} error={errors.company} required={true} />
+			<Input id="email" type='email' label="Email" bind:value={email} error={errors.email} required={true} />
 			<PhoneInput label="Phone" bind:value={phone} error={errors.phone} required={true} />
-			<TextInput id="subject" label="Subject" bind:value={subject} error={errors.subject} required={true} />
-			<TextInput id="message" label="Message" bind:value={message} error={errors.message} required={true} />
+			<Input id="subject" type='text' label="Subject" bind:value={subject} error={errors.subject} required={true} />
+			<Input id="message" type='text' label="Message" bind:value={message} error={errors.message} required={true} />
 			<FormCheckbox bind:checked={agreement} error={errors.agreement} required={true} />
 
             <SubmitButton type="submit" />
