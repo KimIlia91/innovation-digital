@@ -1,5 +1,5 @@
 <script lang="ts">
-    import CheckedIcon from '../lib/images/checked-icon.svg';
+    import CheckedIcon from '../lib/icons/checked-icon.svg';
 
     export let required: boolean = false;
 	export let checked: boolean = false;

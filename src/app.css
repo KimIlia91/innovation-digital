@@ -12,8 +12,8 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-.bg-svg-main {
-    background-image: url('/src/lib/images/bg-main.png');
+.bg-main {
+    background-image: url('/images/bg-main.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
