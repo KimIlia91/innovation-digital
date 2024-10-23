@@ -1,9 +1,9 @@
 <script lang="ts">
-    import CheckedIcon from '../lib/icons/checked-icon.svg';
+    import CheckedIcon from '../lib/icons/checked-icon.svg'
 
-    export let required: boolean = false;
-	export let checked: boolean = false;
-    export let error: string | undefined;
+    export let required: boolean = false
+	export let checked: boolean = false
+    export let error: string | undefined
 </script>
 
 <div class=" relative">

@@ -1,13 +1,13 @@
 <script lang="ts">
-	export let id: string;
-	export let label: string;
-    export let value:string;
-	export let required: boolean = false;
-	export let error: string | undefined;
-	export let type: "email" | "text";
+	export let id: string
+	export let label: string
+    export let value:string
+	export let required: boolean = false
+	export let error: string | undefined
+	export let type: "email" | "text"
 
 	function inputType(node:HTMLInputElement) {
-		node.type = type;
+		node.type = type
 	}
 </script>
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let onSubmit: (event: Event) => void;
+    export let onSubmit: (event: Event) => void
 </script>
 
 <form on:submit|preventDefault={onSubmit} method="post" class="bg-[#171929] w-full max-w-[390px] px-10 py-11 rounded-[27px] flex flex-col items-center gap-[38px] shadow-[0px_0px_50px_0px_rgba(0,0,0,0.7)]">

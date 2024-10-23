@@ -1,18 +1,18 @@
 <script lang="ts">
-	export let label: string;
-    export let value:string;
-	export let required: boolean = false;
-	export let error: string | undefined;
+	export let label: string
+    export let value:string
+	export let required: boolean = false
+	export let error: string | undefined
 
 	function handleInput(event: Event) {
-		const input = event.target as HTMLInputElement;
+		const input = event.target as HTMLInputElement
 		
 		if (input.value.startsWith('+')) {
-			input.value = '+' + input.value.slice(1).replace(/[^0-9]/g, '');
+			input.value = '+' + input.value.slice(1).replace(/[^0-9]/g, '')
 		} else {
-			input.value = input.value.replace(/[^0-9]/g, '');
+			input.value = input.value.replace(/[^0-9]/g, '')
 		}
-		value = input.value;
+		value = input.value
 	}
 </script>
 

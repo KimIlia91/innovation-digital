@@ -37,12 +37,12 @@
 		})
 
 		if (!result.success) {
-			result.error.errors.forEach(error => errors[error.path[0]] = error.message);
+			result.error.errors.forEach(error => errors[error.path[0]] = error.message)
 			return
 		}
 
 		console.log(result.data)
-	};
+	}
 </script>
 
 <section class="py-[87px] px-4 w-full origin-top">
